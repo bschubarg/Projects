@@ -1,0 +1,11 @@
+C:\Lotto\LottoService\LottoSvc.cs
+C:\Lotto\LottoService\LottoSvc.Designer.cs
+C:\Lotto\LottoService\Connect.config
+C:\Lotto\LottoService\LottoNumbersService.exe.config
+C:\Lotto\LottoService\LottoNumbersService.exe
+C:\Lotto\LottoService\LottoNumbersService.pdb
+C:\Users\Garage\Documents\Visual Studio 2012\Projects\Lotto\Lotto\LottoNumbersService\obj\Release\LottoNumbersService.csprojResolveAssemblyReference.cache
+C:\Users\Garage\Documents\Visual Studio 2012\Projects\Lotto\Lotto\LottoNumbersService\obj\Release\LottoNumbersService.ProjectInstaller.resources
+C:\Users\Garage\Documents\Visual Studio 2012\Projects\Lotto\Lotto\LottoNumbersService\obj\Release\LottoNumbersService.csproj.GenerateResource.Cache
+C:\Users\Garage\Documents\Visual Studio 2012\Projects\Lotto\Lotto\LottoNumbersService\obj\Release\LottoNumbersService.exe
+C:\Users\Garage\Documents\Visual Studio 2012\Projects\Lotto\Lotto\LottoNumbersService\obj\Release\LottoNumbersService.pdb

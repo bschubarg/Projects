@@ -1,0 +1,14 @@
+C:\Users\Garage\Documents\Visual Studio 2012\Projects\Lotto\Lotto\LottoNumbersService\bin\Debug\LottoNumbersService.exe.config
+C:\Users\Garage\Documents\Visual Studio 2012\Projects\Lotto\Lotto\LottoNumbersService\bin\Debug\LottoNumbersService.exe
+C:\Users\Garage\Documents\Visual Studio 2012\Projects\Lotto\Lotto\LottoNumbersService\bin\Debug\LottoNumbersService.pdb
+C:\Users\Garage\Documents\Visual Studio 2012\Projects\Lotto\Lotto\LottoNumbersService\obj\Debug\LottoNumbersService.exe
+C:\Users\Garage\Documents\Visual Studio 2012\Projects\Lotto\Lotto\LottoNumbersService\obj\Debug\LottoNumbersService.pdb
+C:\Lotto\LottoService\LottoNumbersService.exe.config
+C:\Lotto\LottoService\LottoSvc.cs
+C:\Lotto\LottoService\LottoSvc.Designer.cs
+C:\Lotto\LottoService\LottoNumbersService.exe
+C:\Lotto\LottoService\LottoNumbersService.pdb
+C:\Users\Garage\Documents\Visual Studio 2012\Projects\Lotto\Lotto\LottoNumbersService\obj\Debug\LottoNumbersService.ProjectInstaller.resources
+C:\Users\Garage\Documents\Visual Studio 2012\Projects\Lotto\Lotto\LottoNumbersService\obj\Debug\LottoNumbersService.csproj.GenerateResource.Cache
+C:\Users\Garage\Documents\Visual Studio 2012\Projects\Lotto\Lotto\LottoNumbersService\obj\Debug\LottoNumbersService.csprojResolveAssemblyReference.cache
+C:\Lotto\LottoService\Connect.config
