@@ -1,0 +1,27 @@
+C:\Users\Garage\Documents\Visual Studio 2012\Projects\Lotto\Lotto\LottoNumbersService\obj\Release\LottoNumbersService.csprojResolveAssemblyReference.cache
+C:\Users\Garage\Documents\Visual Studio 2012\Projects\Lotto\Lotto\LottoNumbersService\obj\Release\LottoNumbersService.ProjectInstaller.resources
+C:\Users\Garage\Documents\Visual Studio 2012\Projects\Lotto\Lotto\LottoNumbersService\obj\Release\LottoNumbersService.csproj.GenerateResource.Cache
+C:\Users\Garage\Documents\Visual Studio 2012\Projects\Lotto\Lotto\LottoNumbersService\obj\Release\LottoNumbersService.exe
+C:\Users\Garage\Documents\Visual Studio 2012\Projects\Lotto\Lotto\LottoNumbersService\obj\Release\LottoNumbersService.pdb
+C:\Lotto\LottoService\LottoSvc.cs
+C:\Lotto\LottoService\LottoSvc.Designer.cs
+C:\Lotto\LottoService\InstallUtil.exe
+C:\Lotto\LottoService\InstallUtilLib.dll
+C:\Lotto\LottoService\App.config
+C:\Lotto\LottoService\Connect.config
+C:\Lotto\LottoService\InstallUtil.exe.config
+C:\Lotto\LottoService\Lotto_InstallUtil.bat
+C:\Lotto\LottoService\LottoNumbersService.exe.config
+C:\Lotto\LottoService\LottoNumbersService.exe
+C:\Lotto\LottoService\LottoNumbersService.pdb
+C:\Users\BILLS\Dropbox\Lotto\LottoNumbersService\obj\Release\LottoNumbersService.csprojResolveAssemblyReference.cache
+C:\Users\BILLS\Dropbox\Lotto\LottoNumbersService\obj\Release\LottoNumbersService.ProjectInstaller.resources
+C:\Users\BILLS\Dropbox\Lotto\LottoNumbersService\obj\Release\LottoNumbersService.csproj.GenerateResource.Cache
+C:\Users\BILLS\Dropbox\Lotto\LottoNumbersService\obj\Release\LottoNumbersService.csproj.CoreCompileInputs.cache
+C:\Users\BILLS\Dropbox\Lotto\LottoNumbersService\obj\Release\LottoNumbersService.exe
+C:\Users\BILLS\Dropbox\Lotto\LottoNumbersService\obj\Release\LottoNumbersService.pdb
+C:\Users\bschubarg\Dropbox\Lotto\LottoNumbersService\obj\Release\LottoNumbersService.exe
+C:\Users\bschubarg\Dropbox\Lotto\LottoNumbersService\obj\Release\LottoNumbersService.pdb
+C:\Users\bschubarg\Dropbox\Lotto\LottoNumbersService\obj\Release\LottoNumbersService.csprojResolveAssemblyReference.cache
+C:\Users\bschubarg\Dropbox\Lotto\LottoNumbersService\obj\Release\LottoNumbersService.ProjectInstaller.resources
+C:\Users\bschubarg\Dropbox\Lotto\LottoNumbersService\obj\Release\LottoNumbersService.csproj.GenerateResource.Cache
