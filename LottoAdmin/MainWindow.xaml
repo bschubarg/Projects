@@ -1,0 +1,124 @@
+﻿<Window
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"        
+        xmlns:sl="clr-namespace:LottoAdmin.StateLottoNumbersDataSetTableAdapters"        
+        xmlns:lottoAdmin="clr-namespace:LottoAdmin" x:Name="MainWindow1"
+        x:Class="LottoAdmin.MainWindow"
+        mc:Ignorable="d"
+        Title="Lotto Administrator" Height="350" Width="525" Icon="Resources/TrayIcon.ico" Loaded="MainWindow_Loaded">
+    <Window.Resources>
+        <ObjectDataProvider x:Key="LottoStateLookup" ObjectType="{x:Type sl:LottoUrlStateNameTableAdapter}" MethodName="GetStates"/>
+        <ObjectDataProvider x:Key="LottoGamesLookup" ObjectType="{x:Type sl:LottoGameTableAdapter}" MethodName="GetGames"/>
+        <lottoAdmin:MyNonStatic x:Key="VM" />
+    </Window.Resources>
+    <Grid>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="57*"/>
+            <RowDefinition Height="7*"/>
+        </Grid.RowDefinitions>
+        <Grid.Background>
+            <LinearGradientBrush EndPoint="0.5,1" MappingMode="RelativeToBoundingBox" StartPoint="0.5,0">
+                <GradientStop Color="Black" Offset="1"/>
+                <GradientStop Color="#FFFCFCFA"/>
+            </LinearGradientBrush>
+        </Grid.Background>
+        <Grid.Effect>
+            <DropShadowEffect/>
+        </Grid.Effect>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="361*"/>
+            <ColumnDefinition Width="158*"/>
+        </Grid.ColumnDefinitions>
+        <CheckBox x:Name="chkEnable" Margin="75,113,0,0" VerticalAlignment="Top" Content="Enable" HorizontalAlignment="Left" VerticalContentAlignment="Bottom" Click="chkEnable_Click" Height="15" Width="55" RenderTransformOrigin="1.629,-1.093"/>
+        <ComboBox x:Name="cbLottoState" HorizontalAlignment="Left" Margin="10,35,0,0" VerticalAlignment="Top" Width="120" DisplayMemberPath="State" SelectedValuePath="StateID" ItemsSource="{Binding Source={StaticResource LottoStateLookup}}" SelectedIndex="0" SelectionChanged="cb_SelectionChanged" Height="23">
+        </ComboBox>
+        <Label x:Name="lblState" Content="Lotto State" HorizontalAlignment="Left" Margin="10,9,0,0" VerticalAlignment="Top" Height="25" Width="67"/>
+        <ComboBox x:Name="cbLottoGames" HorizontalAlignment="Left" Margin="10,86,0,0" VerticalAlignment="Top" Width="120" DisplayMemberPath="Game" SelectedValuePath="GameID" ItemsSource="{Binding Source={StaticResource LottoGamesLookup}}" SelectedIndex="0" SelectionChanged="cb_SelectionChanged" Height="22">
+        </ComboBox>
+        <Label x:Name="lblGame" Content="Lotto Game" HorizontalAlignment="Left" Margin="10,61,0,0" VerticalAlignment="Top" Height="26" Width="72"/>
+        <Image HorizontalAlignment="Left" Height="143" Margin="0.278,168,0,0" VerticalAlignment="Top" Width="150" RenderTransformOrigin="-0.296,0.657" Source="Resources/AppLogo.png" Grid.Column="1" SnapsToDevicePixels="True"
+               Grid.Row="0" Grid.RowSpan="2">
+            <Image.Effect>
+                <DropShadowEffect/>
+            </Image.Effect>
+            <Image.RenderTransform>
+                <TransformGroup>
+                    <ScaleTransform/>
+                    <SkewTransform/>
+                    <RotateTransform/>
+                    <TranslateTransform/>
+                </TransformGroup>
+            </Image.RenderTransform>
+        </Image>
+        <Rectangle Fill="#FFF4F4F5" HorizontalAlignment="Left" Height="1" Margin="11,140,0,0" Stroke="Black" VerticalAlignment="Top" Width="498" RenderTransformOrigin="0.5,0.5"
+                   Grid.Row="0" Grid.ColumnSpan="2">
+            <Rectangle.Effect>
+                <DropShadowEffect/>
+            </Rectangle.Effect>
+        </Rectangle>
+        <TextBlock HorizontalAlignment="Left" Margin="11,146,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Height="56" Width="340" FontSize="14" Foreground="#FFFCF6F6">
+            <TextBlock.Effect>
+                <DropShadowEffect/>
+            </TextBlock.Effect><Run Text="Lotto Numbers are refreshed daily using a Windows Service.  Select the hour of day when this service executes."/>
+        </TextBlock>
+        <Label x:Name="lblHour" Content="Hour" Margin="151,230,0,0" RenderTransformOrigin="0.526,-0.615" Height="28" Foreground="#FFF1DFDF" Width="72" HorizontalAlignment="Left" VerticalAlignment="Top"/>
+        <Slider x:Name="sldHour" HorizontalAlignment="Left" Margin="10,207,0,0" VerticalAlignment="Top" RenderTransformOrigin="0.333,-1.389" Width="340" Maximum="23.75" Cursor="UpArrow" TickPlacement="BottomRight" Value="3" ValueChanged="sldHour_ValueChanged" SmallChange="0.25" Height="24"/>
+        <Button x:Name="btnCommit" Content="Commit" HorizontalAlignment="Left" Margin="268,245,0,0" VerticalAlignment="Top" Width="75" Foreground="#FFFDF6F6" Click="btnCommit_Click" Height="20">
+            <Button.Background>
+                <RadialGradientBrush>
+                    <GradientStop Color="Black"/>
+                    <GradientStop Color="#FF2652A0" Offset="1"/>
+                </RadialGradientBrush>
+            </Button.Background>
+            <Button.Effect>
+                <DropShadowEffect Color="#FFD6BBBB"/>
+            </Button.Effect>
+        </Button>
+        <!-- The following NotifyIcon is not really needed for the Taskbar Notifier, but compliments it nicely. 
+         The NotifyIcon wrapper was included in this project with permission from Mariano Omar Rodriguez
+         http://weblogs.asp.net/marianor/archive/2007/10/15/a-wpf-wrapper-around-windows-form-notifyicon.aspx
+      -->
+        <Rectangle Fill="#FFF4F4F5" HorizontalAlignment="Left" Height="1" Margin="14,1.644,0,0" Stroke="#FF3D91E0" VerticalAlignment="Top" Width="329" RenderTransformOrigin="0.5,0.5" Grid.Row="1">
+            <Rectangle.Effect>
+                <DropShadowEffect/>
+            </Rectangle.Effect>
+        </Rectangle>
+        <TextBlock HorizontalAlignment="Center" Margin="0,1.644,1.722,0" TextWrapping="Wrap" Height="33" Width="336" FontSize="14" Foreground="#FFFCF6F6" Grid.Row="1" VerticalAlignment="Center">
+            <TextBlock.Effect>
+                <DropShadowEffect/>
+            </TextBlock.Effect><Run Text="Run service immediately.   "/><InlineUIContainer>
+                <Button x:Name="btnRunNow" Content="Run Now" Width="77" Foreground="#FFFDF6F6" Click="btnRunNow_Click" Height="19" Margin="10,5,0,0" FontSize="12" ToolTip="Must be in Administrative Mode.">
+                    <Button.Background>
+                        <RadialGradientBrush>
+                            <GradientStop Color="Black"/>
+                            <GradientStop Color="#FF2652A0" Offset="1"/>
+                        </RadialGradientBrush>
+                    </Button.Background>
+                    <Button.Effect>
+                        <DropShadowEffect Color="#FFD6BBBB"/>
+                    </Button.Effect>
+                </Button>
+            </InlineUIContainer></TextBlock>
+        <StackPanel Grid.Row="0" Margin="151,0,9.6,150.356" Grid.ColumnSpan="2" Background="#FFF7F2F2">
+            <StackPanel.Effect>
+                <DropShadowEffect/>
+            </StackPanel.Effect>
+            <ListBox HorizontalContentAlignment="Stretch" DataContext="{Binding Source={StaticResource VM}}" ItemsSource="{Binding Path=OrderList}" Background="#FFF9F5F5" Height="135" HorizontalAlignment="Right" Width="348">
+                <ListBox.ItemTemplate>
+                    <DataTemplate>
+                        <Grid Margin="0,2">
+                            <Grid.ColumnDefinitions>
+                                <ColumnDefinition Width="*" />
+                                <ColumnDefinition Width="50" />
+                            </Grid.ColumnDefinitions>
+                            <TextBlock Text="{Binding Path = Title}" />
+                            <ProgressBar Grid.Column="1" Minimum="0" Maximum="50" Value="{Binding Completion}" />
+                        </Grid>
+                    </DataTemplate>
+                </ListBox.ItemTemplate>
+            </ListBox>
+        </StackPanel>
+    </Grid>
+</Window>
