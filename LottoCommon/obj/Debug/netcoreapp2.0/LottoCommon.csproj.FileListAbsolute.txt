@@ -1,0 +1,7 @@
+C:\Development\LottoWebAPI\LottoCommon\bin\Debug\netcoreapp2.0\LottoCommon.deps.json
+C:\Development\LottoWebAPI\LottoCommon\bin\Debug\netcoreapp2.0\LottoCommon.dll
+C:\Development\LottoWebAPI\LottoCommon\bin\Debug\netcoreapp2.0\LottoCommon.pdb
+C:\Development\LottoWebAPI\LottoCommon\obj\Debug\netcoreapp2.0\LottoCommon.csproj.CoreCompileInputs.cache
+C:\Development\LottoWebAPI\LottoCommon\obj\Debug\netcoreapp2.0\LottoCommon.dll
+C:\Development\LottoWebAPI\LottoCommon\obj\Debug\netcoreapp2.0\LottoCommon.pdb
+C:\Development\LottoWebAPI\LottoCommon\obj\Debug\netcoreapp2.0\LottoCommon.csprojResolveAssemblyReference.cache
