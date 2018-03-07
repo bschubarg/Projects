@@ -1,0 +1,82 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 15
+VisualStudioVersion = 15.0.27130.2027
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "LottoAPI.Core", "LottoAPI.Core\LottoAPI.Core.csproj", "{6C8298D2-427C-46A4-A95B-0A00393E8DB7}"
+	ProjectSection(ProjectDependencies) = postProject
+		{EF07C960-3D4F-4906-BC42-9EBC03A5F59E} = {EF07C960-3D4F-4906-BC42-9EBC03A5F59E}
+	EndProjectSection
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "LottoCommon", "LottoCommon\LottoCommon.csproj", "{EF07C960-3D4F-4906-BC42-9EBC03A5F59E}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "LottoWebAPI.Core", "LottoWebAPI.Core\LottoWebAPI.Core.csproj", "{89D53E39-E8C6-4CF6-B270-F1621305D4A0}"
+	ProjectSection(ProjectDependencies) = postProject
+		{EF07C960-3D4F-4906-BC42-9EBC03A5F59E} = {EF07C960-3D4F-4906-BC42-9EBC03A5F59E}
+	EndProjectSection
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "LottoAdmin", "LottoAdmin\LottoAdmin.csproj", "{0E0D7FDA-6778-4EDA-AD7B-560FE66DEAB8}"
+	ProjectSection(ProjectDependencies) = postProject
+		{EF07C960-3D4F-4906-BC42-9EBC03A5F59E} = {EF07C960-3D4F-4906-BC42-9EBC03A5F59E}
+	EndProjectSection
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "LottoNumbersService", "LottoNumbersService\LottoNumbersService.csproj", "{6B64070E-F3CD-497D-9E21-9D3AC4033325}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "SQL Scripts", "SQL Scripts", "{7BA3DA3D-DF53-4D08-B57D-B9979D5A30BF}"
+	ProjectSection(SolutionItems) = preProject
+		SQL Scripts\CreateLottoNumberTable.sql = SQL Scripts\CreateLottoNumberTable.sql
+		SQL Scripts\StateLottoNumbers.sql = SQL Scripts\StateLottoNumbers.sql
+	EndProjectSection
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "SQL Stored Procs", "SQL Stored Procs", "{DBA12CED-DB3B-4B1C-8C45-A8F0B5EEEDFC}"
+	ProjectSection(SolutionItems) = preProject
+		Stored Procs & Scripts\CreateLottoDatabase.sql = Stored Procs & Scripts\CreateLottoDatabase.sql
+		Stored Procs & Scripts\GetLottoAppSettings.sql = Stored Procs & Scripts\GetLottoAppSettings.sql
+		Stored Procs & Scripts\GetLottoFetched.sql = Stored Procs & Scripts\GetLottoFetched.sql
+		Stored Procs & Scripts\GetLottoNumbers.sql = Stored Procs & Scripts\GetLottoNumbers.sql
+		Stored Procs & Scripts\GetLottos.sql = Stored Procs & Scripts\GetLottos.sql
+		Stored Procs & Scripts\GetLottoStateGameEnabled.sql = Stored Procs & Scripts\GetLottoStateGameEnabled.sql
+		Stored Procs & Scripts\GetLottoStateGames.sql = Stored Procs & Scripts\GetLottoStateGames.sql
+		Stored Procs & Scripts\GetLottoStates.sql = Stored Procs & Scripts\GetLottoStates.sql
+		Stored Procs & Scripts\InsertLottoAppLog.sql = Stored Procs & Scripts\InsertLottoAppLog.sql
+		Stored Procs & Scripts\InsertLottoFetched.sql = Stored Procs & Scripts\InsertLottoFetched.sql
+		Stored Procs & Scripts\InsertLottoNumber.sql = Stored Procs & Scripts\InsertLottoNumber.sql
+		Stored Procs & Scripts\InsertLottoStateGame.sql = Stored Procs & Scripts\InsertLottoStateGame.sql
+		Stored Procs & Scripts\IsLottoGameFetched.sql = Stored Procs & Scripts\IsLottoGameFetched.sql
+		Stored Procs & Scripts\UpdateLottoAppSettings.sql = Stored Procs & Scripts\UpdateLottoAppSettings.sql
+	EndProjectSection
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{6C8298D2-427C-46A4-A95B-0A00393E8DB7}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{6C8298D2-427C-46A4-A95B-0A00393E8DB7}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{6C8298D2-427C-46A4-A95B-0A00393E8DB7}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{6C8298D2-427C-46A4-A95B-0A00393E8DB7}.Release|Any CPU.Build.0 = Release|Any CPU
+		{EF07C960-3D4F-4906-BC42-9EBC03A5F59E}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{EF07C960-3D4F-4906-BC42-9EBC03A5F59E}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{EF07C960-3D4F-4906-BC42-9EBC03A5F59E}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{EF07C960-3D4F-4906-BC42-9EBC03A5F59E}.Release|Any CPU.Build.0 = Release|Any CPU
+		{89D53E39-E8C6-4CF6-B270-F1621305D4A0}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{89D53E39-E8C6-4CF6-B270-F1621305D4A0}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{89D53E39-E8C6-4CF6-B270-F1621305D4A0}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{89D53E39-E8C6-4CF6-B270-F1621305D4A0}.Release|Any CPU.Build.0 = Release|Any CPU
+		{0E0D7FDA-6778-4EDA-AD7B-560FE66DEAB8}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{0E0D7FDA-6778-4EDA-AD7B-560FE66DEAB8}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{0E0D7FDA-6778-4EDA-AD7B-560FE66DEAB8}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{0E0D7FDA-6778-4EDA-AD7B-560FE66DEAB8}.Release|Any CPU.Build.0 = Release|Any CPU
+		{6B64070E-F3CD-497D-9E21-9D3AC4033325}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{6B64070E-F3CD-497D-9E21-9D3AC4033325}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{6B64070E-F3CD-497D-9E21-9D3AC4033325}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{6B64070E-F3CD-497D-9E21-9D3AC4033325}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {CE1E483B-03CE-468B-8399-7C53B6BEB418}
+	EndGlobalSection
+EndGlobal
