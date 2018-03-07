@@ -1,0 +1,11 @@
+C:\Development\LottoAPI.Core\bin\Release\netcoreapp2.0\LottoAPI.Core.deps.json
+C:\Development\LottoAPI.Core\bin\Release\netcoreapp2.0\LottoAPI.Core.dll
+C:\Development\LottoAPI.Core\bin\Release\netcoreapp2.0\LottoAPI.Core.pdb
+C:\Development\LottoAPI.Core\bin\Release\netcoreapp2.0\Common.dll
+C:\Development\LottoAPI.Core\bin\Release\netcoreapp2.0\Common.pdb
+C:\Development\LottoAPI.Core\obj\Release\netcoreapp2.0\LottoAPI.Core.csprojResolveAssemblyReference.cache
+C:\Development\LottoAPI.Core\obj\Release\netcoreapp2.0\LottoAPI.Core.csproj.CoreCompileInputs.cache
+C:\Development\LottoAPI.Core\obj\Release\netcoreapp2.0\LottoAPI.Core.AssemblyInfoInputs.cache
+C:\Development\LottoAPI.Core\obj\Release\netcoreapp2.0\LottoAPI.Core.AssemblyInfo.cs
+C:\Development\LottoAPI.Core\obj\Release\netcoreapp2.0\LottoAPI.Core.dll
+C:\Development\LottoAPI.Core\obj\Release\netcoreapp2.0\LottoAPI.Core.pdb
