@@ -1,0 +1,69 @@
+﻿@*
+    For more information on enabling MVC for empty projects, visit http://go.microsoft.com/fwlink/?LinkID=397860
+*@
+<link href="~/css/Site.css" rel="stylesheet">
+
+<div id="body">
+    <section class="featured">
+        <div class="content-wrapper">
+            <hgroup class="title">
+                <h1>Lotto Numbers Web API 1.0!</h1>
+                <br/>
+                <h2>This Web API service uses AspNetCore and MVC for ASP.NET Web API development.</h2>
+            </hgroup>
+            <p>
+                Other technologies used in developing this ASP.NET Web API are:
+                <ul>
+                    <li>AspNetCore (2.0.5)</li>
+                    <li>Asp.NET Web API</li>
+                    <li>Mvc.Core (2.0.2)</li>
+                    <li>Entity FrameworkCore (2.0.2)</li>
+                    <li>Unity (5.5.6)</li>
+                    <li>WPF 4</li>
+                    <li>Windows Services</li>
+                    <li>SQL Server 2014</li>
+
+                </ul>
+                Lotto Numbers Web API is a RESTful application on the .NET Framework publishing data and services to the web directly over HTTP.
+            </p>
+            <p>
+                To learn more about ASP.NET Web API visit the
+                <a href="http://go.microsoft.com/fwlink/?LinkID=238195" title="ASP.NET Web API Website">ASP.NET Web API Website</a>.               
+            </p>
+        </div>
+    </section>
+    <section class="content-wrapper main-content clear-fix">
+        <h3>More about the Lotto Numbers Web API and what it does:</h3>
+        <ol class="round">
+            <li class="one">
+                <h5>RESTFul Web Api to retrieve winning lotto numbers</h5>
+                Across the country, states have their own lotto games held daily, twice a day and even more.
+                Those winning numbers can be retrieved using this service from your laptop or mobile device.
+                The Lotto Admin tool lets you pick the state lotto games from across the country and populate your
+                SQL Database.  The Lotto Admin tool also filters what lotto game you want to publish through
+                your Web API portal.                
+                <a href="http://go.microsoft.com/fwlink/?LinkId=245160">Learn more…</a>
+            </li>
+
+            <li class="two">
+                <h5>Lotto Windows Service(LWS)</h5>
+                LWS is a Microsoft Windows Service developed by me that runs in the background performing all the <i>heavy lifting.</i>
+                By scraping web pages across the country, it populates the SQL database with winning lotto numbers as far back
+                as 1998.  The Lotto Admin helps you configure what states and their respective lotto games to retrieve and when
+                to retrieve them(Lotto Service Trigger(LST)).  Retrieval is once a day and since it is a Windows Service, it will sit
+                idle in the background until the LST's time has arrived launching the scraper and populating the database with new winning
+                lotto numbers.
+                <a href="http://go.microsoft.com/fwlink/?LinkId=245161">Learn more…</a>
+            </li>
+            <li class="three">
+                <h5>Where can I find the code</h5>
+                I developed Lotto Numbers Web API as an execise for me to maintain my relavancy in the ASP.NET world.  It also serves as a
+                demonstration of my skill set to any prospective future employer.  Having said that I would be a fool not to share what I
+                have developed so far.  Furthermore, I welcome any constructive feedback and ideas that could further the design, performance
+                or useability.
+                
+                <a href="https://bschubarg.visualstudio.com/DefaultCollection/Lotto/_git/LottoWebAPI">Get the Source Repository Here...</a>
+            </li>
+        </ol>
+    </section>
+</div>
